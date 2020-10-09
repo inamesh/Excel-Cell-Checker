@@ -21,7 +21,7 @@ namespace Excel_Cell_Checker
         [ExcelFunction(Description = "Find Latin characters within the specified text. Returns the first Latin character or word found or " + notFound + " if no match is found")]
         public static string FindFirstLatin([ExcelArgument(Name = "Text", Description = "Relevant Text")] string txt)
         {
-            string pattern = @"[\p{IsBasicLatin} -[\s\d\p{P}]]+"; 
+            string pattern = @"[\p{IsBasicLatin} -[\s\d\p{P}]]+"; //Basic Latin EXCLUDING Punctuation, numbers and spaces
             Regex rgx = new Regex(pattern, RegexOptions.None);
             Match m;
             try
