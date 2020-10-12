@@ -42,7 +42,7 @@ namespace Excel_Cell_Checker
         [ExcelFunction(Description = "Find Greek characters within the specified text. Returns the first Greek character or word found or " + notFound + " if no match is found")]
         public static string FindFirstGreek([ExcelArgument(Name = "Text", Description = "Relevant Text")] string txt)
         {
-            string pattern = @"[\p{IsGreek} -[\s\d\p{P}]]+";
+            string pattern = @"[\p{IsGreek}]+";  //Greek does not need the negative classes
             Regex rgx = new Regex(pattern, RegexOptions.None);
             Match m;
             try
@@ -123,7 +123,7 @@ namespace Excel_Cell_Checker
         public static string FindAllGreek([ExcelArgument(Name = "Text", Description = "Relevant Text")] string txt)
         {
             string fullMatch = "";
-            string pattern = @"(?<elGreco>[\p{IsGreek} -[\s\d\p{P}]]+)";
+            string pattern = @"(?<elGreco>[\p{IsGreek}]+)"; //Greek does not need the negative classes
             Regex rgx = new Regex(pattern, RegexOptions.ExplicitCapture);
             Match m;
             try
