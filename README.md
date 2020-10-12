@@ -10,6 +10,5 @@ We begin this project with a few simple functions:
 5. FindAllGreek - Returns a comma separated list of Greek characters (words) within the selected text.
 6. FindAllRegex - Returns a comma separated list of all matches of the supplied .NET compatible Regular Expression pattern within the slected text.
 
-##Note on regular Expressions
-The Regular Expression is meant to be used with .NET compatible refular expressions including Exclusion groups! Special features of other Regex parsers will not work and might generate errors.
-
+## Note on Regular Expressions
+The FindFirstRegex and FindAllRegex functions are meant to be used with <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions" target="_blank">.NET compatible regular expressions</a> including Exclusion groups! Special features of other Regex parsers will not work and might generate errors.
