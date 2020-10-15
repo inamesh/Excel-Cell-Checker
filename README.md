@@ -11,7 +11,7 @@ We begin this project with a few simple functions:
 6. FindAllRegex - Returns a comma separated list of all matches of the supplied .NET compatible Regular Expression pattern within the selected text.
 
 ## Installation
-1. Download the correct version for your version of Excel from the <a href="Excel.Cell.Checker-AddIn64-packed.xll" target="_blank">releases</a> page:
+1. Download the correct version for your version of Excel from the <a href="https://github.com/inamesh/Excel-Cell-Checker/releases" target="_blank">releases</a> page:
     * Excel 32-bit: Excel.Cell.Checker-AddIn-packed.xll
     * Excel 64-bit: Excel.Cell.Checker-AddIn64-packed.xll
 
